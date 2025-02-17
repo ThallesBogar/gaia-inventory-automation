@@ -1,0 +1,7 @@
+.venv
+.idea
+.env
+__pycache__
+app/Models/__pycache__
+migrations/__pycache__
+migrations/version/__pycache__
