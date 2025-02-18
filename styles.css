@@ -1,0 +1,49 @@
+svg {
+    color: %primary_color% !important;
+}
+
+.st-key-login-container {
+    background-color: #E6EAF1;
+    padding: 24px;
+    border-radius: 4px;
+
+    .custom-padding {
+        margin-bottom: 1rem;
+    }
+
+    .st-key-username-input {
+        div [data-testid="stTextInputRootElement"] {
+            border-radius: 4px;
+        }
+
+        label {
+            display: none;
+        }
+    }
+
+    .st-key-password-input {
+        div [data-testid="stTextInputRootElement"] {
+            border-radius: 4px;
+        }
+
+        label {
+            display: none;
+        }
+    }
+
+    .st-key-login-button {
+
+        button {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0;
+            text-align: center;
+        }
+    }
+}
