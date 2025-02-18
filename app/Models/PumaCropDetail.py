@@ -8,8 +8,11 @@ class PumaCropDetail(Base):
 
     id = Column(Integer, primary_key=True)
     field_id = Column(UUID(as_uuid=True), ForeignKey('fields.id'), nullable=False)
-    crop_id = Column(Integer, ForeignKey('crops.id'), nullable=False)
-    season_id = Column(Integer, ForeignKey('seasons.id'), nullable=False)
+    crop_id = Column(Integer, ForeignKey('crops.id'))
+    season_id = Column(Integer, ForeignKey('seasons.id'))
+    crop = Column(String(50))
+    season_name = Column(String(50))
+    season_year = Column(String(4))
     crop_type = Column(String(50))
     planting_system = Column(String(50))
     harvest_yield = Column(Integer)
